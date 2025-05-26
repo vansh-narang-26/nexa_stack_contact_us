@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="grid.css" />
+    <link rel="stylesheet" href="primary.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section class="banner-section">
+      <div class="">
+        <div class="row banner-wrapper">
+          <div class="col-12 col-lg-6 col-md-6 col-sm-6 banner-image">
+            <img src="./assets/banner.svg" />
+          </div>
+          <div
+            class="col-12 col-lg-6 col-md-6 col-sm-6 banner-text"
+            id="formStep1"
+          >
+            <h1>Let's Level up your private cloud, together</h1>
+            <p>
+              You can reach us anytime via
+              <a href="mailto:info@nexastack.ai">info@nexastack.ai</a>
+            </p>
+            <form id="contactForm">
+              <div class="input-group">
+                <div class="form-field">
+                  <label for="firstName"
+                    >First Name <span class="required-asterisk">*</span></label
+                  >
+                  <input
+                    type="text"
+                    id="firstName"
+                    placeholder="Please enter your First Name"
+                  />
+                  <div class="error-message" id="error-firstName"></div>
+                </div>
+
+                <div class="form-field">
+                  <label for="lastName"
+                    >Last Name <span class="required-asterisk">*</span></label
+                  >
+                  <input
+                    type="text"
+                    id="lastName"
+                    placeholder="Please enter your Last Name"
+                  />
+                  <div class="error-message" id="error-lastName"></div>
+                </div>
+              </div>
+              <div class="">
+                <div class="form-field">
+                  <label for="email"
+                    >Business Email ID
+                    <span class="required-asterisk">*</span></label
+                  >
+                  <input
+                    type="text"
+                    id="email"
+                    placeholder="Please enter business email id"
+                  />
+                  <div class="error-message" id="error-email"></div>
+                </div>
+                <div class="form-field">
+                  <label for="company"
+                    >Company Name
+                    <span class="required-asterisk">*</span></label
+                  >
+                  <input
+                    type="text"
+                    id="companyName"
+                    placeholder="Please enter company name"
+                  />
+                  <div class="error-message" id="error-company"></div>
+                </div>
+                <div class="form-field">
+                  <label for="telephone"
+                    >Contact Number
+                    <span class="required-asterisk">*</span></label
+                  >
+                  <input
+                    type="tel"
+                    id="telephone"
+                    placeholder="Please enter contact number"
+                    maxlength="10"
+                  />
+                  <div class="error-message" id="error-telephone"></div>
+                </div>
+              </div>
+              <div class="form-field">
+                <label for="job"
+                  >Job Function <span class="required-asterisk">*</span></label
+                >
+                <select id="job">
+                  <option value="">Please select</option>
+                  <option value="tech">Tech</option>
+                  <option value="finance">Finance</option>
+                  <option value="education">Education</option>
+                </select>
+                <div class="error-message" id="error-job"></div>
+              </div>
+              <div class="form-field">
+                <label for="country"
+                  >Country <span class="required-asterisk">*</span></label
+                >
+                <select id="country">
+                  <option value="">Please select</option>
+                  <option value="tech">Tech</option>
+                  <option value="finance">Finance</option>
+                  <option value="education">Education</option>
+                </select>
+                <div class="error-message" id="error-country"></div>
+              </div>
+              <div class="form-field">
+                <label for="industry"
+                  >Industry belongs to
+                  <span class="required-asterisk">*</span></label
+                >
+                <select id="industry">
+                  <option value="">Please select</option>
+                  <option value="tech">Tech</option>
+                  <option value="finance">Finance</option>
+                  <option value="education">Education</option>
+                </select>
+                <div class="error-message" id="error-industry"></div>
+              </div>
+              <!-- <div class="form-field">
+                <label for="message">Message</label>
+                <textarea
+                  id="message"
+                  placeholder="Leave us a message..."
+                  rows="4"
+                ></textarea>
+                <div class="error-message" id="error-description"></div>
+              </div> -->
+              <button type="submit" class="btn-contact">Contact Us Now</button>
+            </form>
+          </div>
+          <div
+            class="col-12 col-lg-6 col-md-6 col-sm-6 banner-text hidden"
+            id="formStep2"
+          >
+            <h1>Let's Level up your private cloud, together</h1>
+            <p>
+              You can reach us anytime via
+              <a href="mailto:info@nexastack.ai">info@nexastack.ai</a>
+            </p>
+            <form id="second-form">
+              <div class="form-field">
+                <label for="stage"
+                  >What stage are you in?
+                  <span class="required-asterisk">*</span></label
+                >
+                <select id="stage">
+                  <option value="">Please select</option>
+                  <option value="startup">Startup</option>
+                  <option value="scale-startup">Scale Startup</option>
+                  <option value="sme">SME</option>
+                  <option value="smb">SMB</option>
+                  <option value="enterprise">Enterprise</option>
+                </select>
+                <div class="error-message" id="error-stage"></div>
+              </div>
+              <div class="form-field">
+                <label for="cloud-service"
+                  >Any Cloud services Presently Using
+                  <span class="required-asterisk">*</span></label
+                >
+                <select id="cloud-service">
+                  <option value="">Please select</option>
+                  <option value="aws">AWS</option>
+                  <option value="finance">Azure</option>
+                  <option value="education">Google Cloud</option>
+                  <option value="education">IBM</option>
+                  <option value="education">Oracle</option>
+                  <option value="education">On-premises</option>
+                </select>
+                <div class="error-message" id="error-cloud-service"></div>
+              </div>
+              <div class="form-field">
+                <label for="cloud-data"
+                  >Are you using any Cloud Data Platform?
+                  <span class="required-asterisk">*</span></label
+                >
+                <select id="cloud-data">
+                  <option value="">Please select</option>
+                  <option value="tech">Databricks</option>
+                  <option value="finance">Snowflake</option>
+                  <option value="education">Amazon Redshift</option>
+                </select>
+                <div class="error-message" id="error-data"></div>
+              </div>
+              <div class="form-field">
+                <label for="data-tool"
+                  >Which Data Visualisation Tool are you using?
+                  <span class="required-asterisk">*</span></label
+                >
+                <select id="data-tool">
+                  <option value="">Please select</option>
+                  <option value="tech">Power BI</option>
+                  <option value="finance">Tableau</option>
+                </select>
+                <div class="error-message" id="error-data-tool"></div>
+              </div>
+              <div class="form-field">
+                <label for="usecase"
+                  >Business UseCase
+                  <span class="required-asterisk">*</span></label
+                >
+                <select id="usecase">
+                  <option value="">Please select</option>
+                  <option value="tech">Tech</option>
+                  <option value="finance">Finance</option>
+                  <option value="education">Education</option>
+                </select>
+                <div class="error-message" id="error-usecase"></div>
+              </div>
+              <div class="checkbox-field">
+                <label for="emailUpdates">
+                  <input type="checkbox" id="emailUpdates" />
+                  Yes, I'd like XenonStack to share the latest insights and
+                  services updates via email, you may unsubscribe from receiving
+                  the updates at any time by following the instructions in the
+                  communications received.
+                </label>
+                <div class="error-message" id="error-email-update"></div>
+              </div>
+
+              <div class="form-field">
+                <div class="captcha-label-container">
+                  <label for="captcha">
+                    Captcha Text <span class="required-asterisk">*</span>
+                  </label>
+                  <!-- <div class="captcha-display"> -->
+                  <div class="captcha-box" id="generatedCaptcha">PwGyOF0</div>
+                  <button
+                    type="button"
+                    class="refresh-btn"
+                    id="refreshCaptcha"
+                    title="Refresh Captcha"
+                  >
+                    🔄
+                  </button>
+                  <!-- </div> -->
+                </div>
+                <input
+                  type="text"
+                  id="captcha"
+                  name="captcha"
+                  class="captcha-input"
+                  placeholder="Enter captcha here"
+                />
+                <div class="error-message" id="error-captcha"></div>
+              </div>
+
+              <button type="submit" class="btn-submit">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="location-section">
+      <div class="container">
+        <div class="location-wrapper row">
+          <div class="col-12 col-lg-4 col-md-4 col-sm-4 location-div-heading">
+            <p id="location-text">Our Locations</p>
+            <h2>Visit our office</h2>
+            <p>
+              Find us at these locations. Empower Your Vision: Reach Out to us
+              for Tailored Solutions and Strategic Partnerships
+            </p>
+          </div>
+          <div class="col-12 col-lg-4 col-md-4 col-sm-4 location-div">
+            <div class="">
+              <h3>India</h3>
+              <p>
+                STPI Incubation Center - Mohali C-184, 6th Floor 603 Phase 8,
+                Sector 75, Mohali
+              </p>
+            </div>
+            <div class="">
+              <h3>India</h3>
+              <p>
+                #3038 Ajanta Enclave D, Sector 51-D, Chandigarh, Chandigarh
+                160047 - India
+              </p>
+            </div>
+            <div class="">
+              <h3>India</h3>
+              <p>
+                ASMA ADVANCED TECHNOLOGY Office #106, 1st floor Khalijia Center
+                Al Hussain Ibn Ali Hai Al Izdihar Riyadh-11672
+              </p>
+            </div>
+          </div>
+          <div class="col-12 col-lg-4 col-md-4 col-sm-4 location-div-1">
+            <div class="">
+              <h3>India</h3>
+              <p>
+                STPI Incubation Center - Mohali C-184, 6th Floor 603 Phase 8,
+                Sector 75, Mohali
+              </p>
+            </div>
+            <div class="">
+              <h3>India</h3>
+              <p>
+                STPI Incubation Center - Mohali C-184, 6th Floor 603 Phase 8,
+                Sector 75, Mohali
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+  <script src="script.js"></script>
+</html>
