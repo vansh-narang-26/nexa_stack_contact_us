@@ -3,7 +3,7 @@
 }
 
 .error-message {
-    color: red;
+    color: rgba(255, 0, 0, 0.719);
     font-size: 2.3rem;
     margin-top: 2px;
     display: none;
@@ -21,18 +21,12 @@
 }
 
 .required-asterisk {
-    color: red;
-    /* margin-left: 1px; */
+    color: rgba(255, 0, 0, 0.719);
 }
 
 /* Banner section */
 @media(min-width:769px) {
     .banner-text {
-        /* max-width: 800px;
-        padding-right: 40px;
-        padding-left: 40px;
-        margin-inline-end: auto;
-        margin-inline-start: auto; */
         padding: 0rem 8rem;
     }
 }
@@ -52,10 +46,6 @@
     }
 }
 
-
-/* .banner-image {
-    max-height: 1000px;
-} */
 .banner-image {
     max-height: none;
     display: flex;
@@ -86,7 +76,7 @@ label {
     font-size: 2.3rem;
     margin-bottom: 2.4rem;
     font-weight: 500;
-    color: #333;
+    color: #213047;
 }
 
 #contactForm {
@@ -171,11 +161,6 @@ select {
     background-color: #fff;
 }
 
-/* 
-.checkbox-field {
-    display: flex;
-} */
-
 .checkbox-field {
     margin-bottom: 25px;
 }
@@ -184,8 +169,14 @@ select {
     width: 30px;
     margin-right: 10px;
     margin-top: 5px;
-    margin-left: 10px;
+    margin-left: 5px;
     transform: scale(1.2);
+}
+
+@media(max-width:768px) {
+    .checkbox-field input[type="checkbox"] {
+        width: 50px;
+    }
 }
 
 .checkbox-field label {
@@ -206,7 +197,7 @@ select {
     display: block;
     font-size: 2.3rem;
     font-weight: 500;
-    color: #333;
+    color: #213047;
     margin-bottom: 8px;
 }
 
@@ -285,18 +276,14 @@ select {
     padding: 6rem 0;
 }
 
-/* .location-wrapper div{
-    padding: 2rem 3.2rem;
-} */
 .location-div,
 .location-div-1,
 .location-div-heading {
-    padding: 2rem 4rem;
+    padding: 2rem 5rem;
 }
 
 .location-div,
 .location-div-1 {
-    /* padding: 0 5rem; */
     display: flex;
     flex-direction: column;
     gap: 6.5rem;
@@ -317,12 +304,9 @@ select {
     .location-div-1 {
         gap: 2rem;
     }
-
-    /* .location-div-1 {
-        margin-top: 2rem;
-    } */
 }
 
 #location-text {
+    font-size: 3rem;
     color: #0445D2;
 }

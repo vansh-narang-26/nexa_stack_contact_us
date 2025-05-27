@@ -179,7 +179,7 @@ document.getElementById("lastName").addEventListener("input", function () {
     clearError("error-lastName");
   }
 });
-document.getElementById("email").addEventListener("input", function () {
+document.getElementById("email").addEventListener("change", function () {
   const val = this.value.trim();
   const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
   if (!val) {
